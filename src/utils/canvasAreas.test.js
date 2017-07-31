@@ -20,11 +20,11 @@ let expected = {
 describe('canvasAreas', function() {
 
   it('identifies all areas of template image', function() {
-    return expect(getImageAreas(circleTemplateImage, canvasWidth, canvasHeight)).to.eventually.have.length(expected.numTemplateAreas);
+    return expect(getImageAreas(circleTemplateImage, canvasWidth, canvasHeight, expected.numTemplateAreas)).to.eventually.have.length(expected.numTemplateAreas);
   });
 
   it('calls getImageAreas', (done) => {
-    getImageAreas(circleTemplateImage, canvasWidth, canvasHeight).then((areas) => {
+    getImageAreas(circleTemplateImage, canvasWidth, canvasHeight, expected.numTemplateAreas).then((areas) => {
       assert.lengthOf(
         areas,
         expected.numTemplateAreas,
