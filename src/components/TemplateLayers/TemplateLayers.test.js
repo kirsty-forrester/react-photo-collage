@@ -26,6 +26,7 @@ global.Image = window.Image;
 let props = {
   id: "template-layers",
   templateImage: circleTemplateImage,
+  template: '4_circles',
   backgroundColor:"#eeeeee",
   setTemplateSize: (width, height) => { return { width, height } },
   setTemplateOverlay: (overlay) => { return overlay },
