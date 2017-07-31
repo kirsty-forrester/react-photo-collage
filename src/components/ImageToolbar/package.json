@@ -1,0 +1,6 @@
+{
+  "name": "ImageToolbar",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ImageToolbar.js"
+}

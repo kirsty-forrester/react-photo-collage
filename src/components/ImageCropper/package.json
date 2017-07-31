@@ -1,0 +1,6 @@
+{
+  "name": "ImageCropper",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ImageCropper.js"
+}

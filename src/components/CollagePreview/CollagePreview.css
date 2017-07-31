@@ -1,0 +1,21 @@
+.generateButton {
+    position: relative;
+    top: -36px;
+    left: 55px;
+    z-index: 10;
+
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 7px 13px;
+    outline: 0;
+    border: 1px solid #373277;
+    border-radius: 0;
+    background: #373277;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.3333333;
+    cursor: pointer;
+}

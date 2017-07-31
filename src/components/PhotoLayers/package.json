@@ -1,0 +1,6 @@
+{
+  "name": "PhotoLayers",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./PhotoLayers.js"
+}

@@ -1,0 +1,9 @@
+.toolbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.colorPicker {
+    width: 40px;
+    height: 40px;
+}

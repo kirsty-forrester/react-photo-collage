@@ -1,0 +1,6 @@
+{
+  "name": "Templates",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Templates.js"
+}
