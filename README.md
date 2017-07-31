@@ -17,7 +17,9 @@ This project is a sample project for my portfolio and is in development, so it's
 
 # What It Does
 
-The collage maker takes "template" images which have colored image areas on top of a transparent background, and loads them into a canvas where you can upload images into the slots, as well as move and scale the images and change the background color. Then by clicking "Generate Collage Image," you can export a downloadable image file of your created collage.
+![Example output](/public/assets/img/6_boxes.png)
+
+The collage maker takes "template" images like the example above, which have colored image areas on top of a transparent background, and loads them into a canvas where you can upload images into the slots, as well as move and scale the images and change the background color. Then by clicking "Generate Collage Image," you can export a downloadable image file of your created collage.
 
 ### Template Image Requirements
 
