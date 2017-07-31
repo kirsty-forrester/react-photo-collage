@@ -54,9 +54,20 @@ class CollagePreview extends Component {
   drawTemplateOverlay() {
     return new Promise((resolve) => {
       this.tempCtx.drawImage(this.props.templateOverlay, 0, 0);
+      let newImg = document.createElement('img');
 
-      resolve({
-        collageImage: this.tempCanvas.toDataURL('image/png')
+      this.tempCanvas.toBlob((blob) => {
+        let url = URL.createObjectURL(blob);
+
+        newImg.onload = function() {
+          setTimeout(function() {
+            URL.revokeObjectURL(url);
+          }, 1000);
+
+          resolve({ collageImage: url });
+        };
+
+        newImg.src = url;
       });
     });
   }
@@ -66,11 +77,7 @@ class CollagePreview extends Component {
       return;
     }
     this.drawTemplateOverlay().then(({ collageImage }) => {
-      let newWindow = window.open( 'about:blank' );
-      let image = newWindow.document.createElement( 'img' );
-
-      image.src = collageImage;
-      newWindow.document.body.appendChild( image );
+      window.open(collageImage);
     });
   }
   render() {
