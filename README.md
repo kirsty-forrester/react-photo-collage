@@ -24,3 +24,8 @@ The collage maker takes "template" images like the example above, which have col
 ### Template Image Requirements
 
 Template images must be named with the number of image slots in the filename, e.g. 5_squares.png. The template image must also contain some transparent space on the outside.
+
+
+### To Do
+
+Make image exports work on mobile again; I switched to blobs and it isn't working on mobile safari.
